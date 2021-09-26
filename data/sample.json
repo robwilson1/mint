@@ -1,0 +1,60 @@
+{
+  "assets": [
+    {
+      "name": "Natwest Account",
+      "history": [
+        {
+          "amount": 5243.34,
+          "date": 1632671729
+        },
+        {
+          "amount": 4243.34,
+          "date": 1601135729
+        }
+      ]
+    },
+    {
+      "name": "ISA",
+      "history": [
+        {
+          "amount": 3000,
+          "date": 1632671729
+        },
+        {
+          "amount": 1000,
+          "date": 1601035729
+        }
+      ]
+    }
+  ],
+  "liabilities": [
+    {
+      "name": "Student Loan",
+      "interest": 0.9,
+      "history": [
+        {
+          "amount": 10342.24,
+          "date": 1632671729
+        },
+        {
+          "amount": 12000,
+          "date": 1601135729
+        }
+      ]
+    },
+    {
+      "name": "Mortgage",
+      "interest": 2.4,
+      "history": [
+        {
+          "amount": 170000.34,
+          "date": 1632671729
+        },
+        {
+          "amount": 175000.22,
+          "date": 1601035729
+        }
+      ]
+    }
+  ]
+}
