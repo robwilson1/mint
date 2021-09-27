@@ -1,6 +1,8 @@
 import create from "zustand";
 
-import { assets, liabilities } from "@data/sample.json";
+import sampleData from "@data/sample.json";
+
+const { assets, liabilities } = sampleData || { assets: [], liabilities: [] };
 
 const useStore = create<Mint.Store>((set, get) => ({
   assets,
