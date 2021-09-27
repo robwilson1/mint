@@ -1,11 +1,15 @@
-import { Head } from "@components";
+import { Head, SideBar } from "@components";
 
 const Layout: React.FC = ({ children }) => {
   return (
     <>
       <Head />
-      {/* Sidebar */}
-      <main className="p-10">{children}</main>
+      <div className="grid grid-cols-10">
+        <aside className="col-span-2">
+          <SideBar />
+        </aside>
+        <main className="p-10 col-span-6 col-start-2">{children}</main>
+      </div>
     </>
   );
 };
