@@ -1,8 +1,7 @@
 import { useMemo } from "react";
-import { useStore } from "@hooks/index";
-import getTrendData from "@utils/get-trend-data";
-import getNetWorthData from "@utils/get-net-worth-data";
-import SummaryCard from "./summary-card.component";
+import { useStore } from "@hooks";
+import { getTrendData, getNetWorthData } from "@utils";
+import { SummaryCard } from "@components";
 
 const SummaryCards: React.FC = () => {
   const assets = useStore((store) => store.assets);

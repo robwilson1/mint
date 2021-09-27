@@ -17,9 +17,9 @@
     "baseUrl": "./",
     "rootDir": "./",
     "paths": {
-      "@components/*": ["./components/*"],
-      "@hooks/*": ["./hooks/*"],
-      "@utils/*": ["./utils/*"],
+      "@components": ["./components/index"],
+      "@hooks": ["./hooks/index"],
+      "@utils": ["./utils/index"],
       "@data/*": ["./data/*"]
     }
   },

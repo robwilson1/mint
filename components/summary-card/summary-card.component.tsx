@@ -1,5 +1,5 @@
 import { SVGProps } from "react";
-import { Card } from "@components/atoms";
+import { Card } from "@components";
 
 interface SummaryCardProps {
   title: "Assets" | "Liabilites" | "Net Worth";

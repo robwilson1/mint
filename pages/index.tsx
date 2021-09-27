@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
-import { Layout } from "@components/layout";
-import { SummaryCards } from "@components/summary-cards";
-import { History } from "@components/history";
+import { History, Layout, SummaryCards } from "@components";
 
 const Home: NextPage = () => {
   return (

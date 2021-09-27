@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
-import { useStore } from "@hooks/index";
-import { Chart, TabGroup } from "@components/atoms";
-import getChartData from "@utils/get-chart-data";
+import { useStore } from "@hooks";
+import { Chart, TabGroup } from "@components";
+import { getChartData } from "@utils";
 
 const tabs: Mint.Category[] = ["Assets", "Liabilities", "Net Worth"];
 

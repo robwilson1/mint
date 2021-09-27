@@ -1,4 +1,4 @@
-import { Head } from "@components/head";
+import { Head } from "@components";
 
 const Layout: React.FC = ({ children }) => {
   return (
