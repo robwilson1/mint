@@ -13,7 +13,14 @@ interface ChartProps {
   data: Mint.ChartHistory[];
 }
 
-const strokes = ["#6EE7B7", "#93C5FD", "#FCA5A5", "#C4B5FD"];
+const strokes = [
+  "#6EE7B7",
+  "#93C5FD",
+  "#FCA5A5",
+  "#C4B5FD",
+  "#fff000",
+  "#0f0f0f",
+];
 
 const Chart: React.FC<ChartProps> = ({ data }) => {
   const dataKeys = [

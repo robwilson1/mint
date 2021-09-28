@@ -1,12 +1,8 @@
 import { useMemo } from "react";
-import { useStore } from "@hooks";
 import { getTrendData, getNetWorthData } from "@utils";
 import { SummaryCard } from "@components";
 
-const SummaryCards: React.FC = () => {
-  const assets = useStore((store) => store.assets);
-  const liabilities = useStore((store) => store.liabilities);
-
+const SummaryCards: React.FC<Mint.Data> = ({ assets, liabilities }) => {
   const {
     total: assetsTotal,
     previousTotal: previousAssetsTotal,

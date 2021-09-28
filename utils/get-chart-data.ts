@@ -25,6 +25,18 @@ function getDataKeys(input: Mint.ChartHistory[]) {
   ];
 }
 
+function combineHistory(history: Mint.ChartHistory[]) {
+  return history.filter((item, idx) => {
+    if (idx === history.length - 1) return true;
+
+    if (item.date !== history[idx + 1].date) {
+      return true;
+    }
+
+    return false;
+  });
+}
+
 export default function getChartData<T extends Mint.Liability | Mint.Asset>(
   input: T[]
 ) {
@@ -51,5 +63,5 @@ export default function getChartData<T extends Mint.Liability | Mint.Asset>(
     slice["Total"] = total;
   }
 
-  return sortedHistory;
+  return combineHistory(sortedHistory);
 }

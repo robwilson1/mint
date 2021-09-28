@@ -32,12 +32,18 @@ declare namespace Mint {
   interface Store {
     assets: Asset[];
     liabilities: Liability[];
+    initStore: (data: Data) => void;
     addAsset: (name: Name) => void;
     removeAsset: (name: Name) => void;
     updateAsset: (name: Name, data: Update) => void;
     addLiability: (name: string) => void;
     removeLiability: (name: string) => void;
     updateLiability: (name: string, data: Update) => void;
+  }
+
+  interface Data {
+    assets: Asset[];
+    liabilities: Liability[];
   }
 
   interface TrendDataOutput {
